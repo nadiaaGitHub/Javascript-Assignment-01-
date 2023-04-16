@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 02</title>
+</head>
+<!-- calculate the fitrah amount, first, ask the user to enter the total number of family
+members using the prompt and store the value in a variable called
+"familyMembers". Next, ask the user to choose a fitrah method by providing them
+options using the prompt, and store the selected method and its price in variables.
+Then, use an if-else block to check the user's input and calculate the fitrah amount
+by multiplying the selected method's price with the number of family members.
+Finally, display the calculated fitrah amount using an alert message. -->
+
+<script>
+    // Take input from User
+    var familyMembers = + prompt("Enter the total number of family members");
+    var ChooseOption = prompt("Wheat\nDates\nBalary\nRaisins");
+
+    // Fitrah Amount
+    var wheat = 170
+    var dates = 1600
+    var balary = 560
+    var raisins = 2800
+
+    if (ChooseOption == 'wheat') {
+        var total = familyMembers * wheat
+        alert(total)
+    }
+
+    else if (ChooseOption == 'dates') {
+        var total = familyMembers * dates
+        alert(total)
+    }
+
+    else if (ChooseOption == 'balary') {
+        var total = familyMembers * balary
+        alert(total)
+    }
+
+    else if (ChooseOption == 'raisins') {
+        var total = familyMembers * raisins
+        alert(total)
+    }
+
+    else {
+        var total = ("Please choose the  given options and try again")
+        alert(total)
+    }
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>

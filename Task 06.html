@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 06</title>
+</head>
+<!-- Create an Array that contains different products, and get input from the user in which you
+ask your user to give the position of that element he/she wants. Now remove that Item
+from your array and console the removed item, Also display the remaining items in the
+array and total number of items remaining. -->
+
+<script>
+   products = ["Lime Soda", "Strawberry Milkshake", "Banana Milkshake", "Lassi", "Coffee","Tea"];
+ position = parseInt(prompt(`Enter the position of the product to remove (1-${products.length}):\n 1: Lime Soda \n 2 : Strawberry Milkshake \n 3: Banana Milkshake  \n 4: Lassi  \n 5: Coffee  \n 6: Tea` ));
+
+// Remove the product at the specified position and save it to a variable  
+ removedProduct = products.splice(position - 1, 1)[0];
+
+// Display the removed product and the remaining products in the array
+alert(`Removed product: ${removedProduct}`);
+alert(`Remaining products: ${products.join(", ")}`);
+
+// Display the total number of remaining products
+alert(`Total number of remaining products: ${products.length}`);
+
+</script>
+
+<body>
+
+</body>
+
+</html>

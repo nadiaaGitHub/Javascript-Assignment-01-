@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 08</title>
+</head>
+<!-- You have an array of that contains the name of Pakistani Teams Player selected for
+WorldCup (15 Players) named as WorldCupSquad. Now tomorrow we have a match with
+India, So make an array of final team players (11 Players) that will be playing in tomorrows
+match from the WorldCupSquad array.
+(Hint : Make sure it should not disturb the array that contains 15 players instead you have
+to make a copy of this array) -->
+
+<script>
+    worldCupSquad = ["Babar Azam", "Fakhar Zaman", "Imam-ul-Haq", "Mohammad Rizwan", "Sarfraz Ahmed", "Shadab Khan", "Faheem Ashraf", "Hassan Ali", "Shaheen Afridi", "Haris Rauf", "Mohammad Hasnain", "Shoaib Malik", "Mohammad Hafeez", "Asif Ali", "Imad Wasim"];
+
+// Make a copy of WorldCupSquad using the slice method
+
+matchTeam = worldCupSquad.slice(0, 11);
+
+// final team players for tomorrow's match
+
+alert("Final team players for tomorrow's match:" +matchTeam);
+</script>
+
+<body>
+    
+</body>
+</html>
